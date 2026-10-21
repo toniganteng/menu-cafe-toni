@@ -1,0 +1,93 @@
+/* Pengaturan Dasar & Font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #6f4e37, #a67c52);
+    color: white;
+}
+
+header h1 { margin: 0; font-size: 1.5rem; }
+header p { margin: 5px 0 0 0; font-size: 0.9rem; opacity: 0.9; }
+
+/* Wadah Tombol Filter */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.btn-filter {
+    padding: 8px 16px;
+    border: 1px solid #6f4e37;
+    border-radius: 20px;
+    background: transparent;
+    color: #6f4e37;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-filter.aktif, .btn-filter:hover {
+    background-color: #6f4e37;
+    color: white;
+}
+
+/* Layout Grid Kartu Menu (Khusus Layar HP) */
+.kontainer-menu {
+    display: grid;
+    grid-template-columns: 1fr; /* Satu kolom penuh ke bawah di HP */
+    gap: 15px;
+    padding: 15px;
+    max-width: 500px; /* Batasi lebar maksimal seukuran layar HP */
+    margin: 0 auto;
+}
+
+/* Desain Kartu Menu */
+.kartu {
+    display: flex; /* Menyamping: Foto di kiri, Teks di kanan */
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.foto-menu {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Biar foto tidak gepeng */
+}
+
+.info-menu {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-menu h3 { margin: 0 0 5px 0; font-size: 1rem; }
+.info-menu .harga { margin: 0 0 8px 0; color: #e44d26; font-weight: bold; }
+
+/* Label Status */
+.status {
+    align-self: flex-start;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.hijau { background-color: #d4edda; color: #155724; }
+.merah { background-color: #f8d7da; color: #721c24; }
