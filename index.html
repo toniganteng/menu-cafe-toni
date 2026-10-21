@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KulinerQR - Menu Kafe Digital</title>
+    <!-- Menyambungkan ke file CSS untuk dekorasi -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Kafe -->
+    <header>
+        <h1>☕ Kopi Senja Startup</h1>
+        <p>Pindai, Pilih, dan Nikmati Hidanganmu</p>
+    </header>
+
+    <!-- Tombol Filter Kategori -->
+    <nav class="filter-container">
+        <button onclick="filterMenu('semua')" class="btn-filter aktif">Semua</button>
+        <button onclick="filterMenu('makanan')" class="btn-filter">Makanan</button>
+        <button onclick="filterMenu('minuman')" class="btn-filter">Minuman</button>
+    </nav>
+
+    <!-- Tempat Kartu Menu Muncul (Akan diisi oleh JavaScript) -->
+    <main id="kontainer-menu" class="kontainer-menu">
+        <!-- Kartu menu dari JS akan disuntikkan ke sini otomatis -->
+    </main>
+
+    <!-- Menyambungkan ke file JavaScript agar web bisa berpikir -->
+    <script src="script.js"></script>
+</body>
+</html>
